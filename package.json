@@ -1,0 +1,26 @@
+{
+  "name": "commons-style-guide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pl:build": "patternlab build --config ./patternlab-config.json",
+    "pl:help": "patternlab --help",
+    "pl:install": "patternlab install --config ./patternlab-config.json",
+    "pl:serve": "patternlab serve --config ./patternlab-config.json",
+    "pl:version": "patternlab --version",
+    "deploy": "git push origin `git subtree split --prefix dist master`:gh-pages --force"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pattern-lab/cli": "^5.14.1",
+    "@pattern-lab/core": "^5.14.1",
+    "@pattern-lab/engine-handlebars": "^5.14.0",
+    "@pattern-lab/starterkit-handlebars-vanilla": "^1.4.0",
+    "@pattern-lab/uikit-workshop": "^5.14.1",
+    "node-sass": "^4.14.1"
+  }
+}
