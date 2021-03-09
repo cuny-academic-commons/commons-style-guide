@@ -1,0 +1,172 @@
+.directory-filters-inputs {
+	display: flex;
+	flex-grow: 1;
+	justify-content: flex-end;
+	padding-top: 4px;
+}
+
+.directory-filters-inputs > div {
+	margin-right: 13px;
+}
+
+.directory-filters-inputs button {
+	border: none;
+	border-radius: 0;
+	height: 31px;
+	line-height: 31px;
+	padding: 0 12px;
+	white-space: nowrap;
+}
+
+.directory-filters-inputs input[type="text"] {
+	font-size: 12px;
+	height: 27px;
+	line-height: 27px;
+	padding: 0 11px;
+}
+
+.directory-filter-dropdown {
+	height: 31px;
+	overflow: visible;
+	position: relative;
+}
+
+.directory-filters-inputs button.directory-filter-dropdown-button {
+	background: #ccc;
+	color: #00090a;
+	position: relative;
+	padding-right: 30px;
+}
+
+.directory-filters-inputs button.directory-filter-dropdown-button:hover {
+	background: #555;
+	color: #fff;
+}
+
+.directory-filter-dropdown-button:after {
+	color: #666;
+	content: '\f140';
+	font-family: 'dashicons';
+	font-size: 18px;
+	position: absolute;
+	right: 9px;
+}
+
+.directory-filter-dropdown-button:hover:after {
+	color: #fff;
+}
+
+.has-active-filters .directory-filter-dropdown-button:after {
+	color: #fff;
+	content: '\f12a';
+	font-size: 14px;
+}
+
+.directory-filter-dropdown-button:hover {
+	border: none;
+}
+
+.directory-filters-inputs .has-active-filters button.directory-filter-dropdown-button {
+	background: #666;
+	color: #fff;
+}
+
+.directory-filters-inputs .has-active-filters button.directory-filter-dropdown-button:hover {
+	background: #555;
+}
+
+.directory-filters-inputs button.directory-filter-dropdown-button[aria-selected="true"] {
+	background: #f58d58;
+	color: #fff;
+}
+
+.directory-filters-inputs button.directory-filter-dropdown-button[aria-selected="true"]:hover {
+	background: #e27640;
+}
+
+.directory-filters-inputs button.directory-filter-dropdown-button[aria-selected="true"]:after {
+	color: #fff;
+}
+
+.directory-filter-options {
+	background: #fff;
+	border: solid 1px #f58d58;
+	top: 39px;
+	height: 200px;
+	padding: 0;
+	position: absolute;
+	overflow: hidden;
+	width: 280px;
+	z-index: 10;
+}
+
+.directory-filter-options-scrollable {
+	height: 100%;
+	padding: 19px 19px;
+	overflow-y: auto;
+}
+
+.directory-filter-options[aria-hidden="true"] {
+	display: none;
+}
+
+.directory-filter-options input[type="checkbox"] {
+	float: left;
+}
+
+.directory-filter-options ul {
+	display: flex;
+	flex-direction: column;
+}
+
+.directory-filter-options label {
+	display: block;
+	margin-left: 30px;
+	text-indent: 0px;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 18px;
+}
+
+.directory-filter-options li {
+	margin-bottom: 12px;
+}
+
+.directory-filters-inputs button.directory-filter-submit {
+	background: #f58d58;
+	border-radius: 2px;
+	color: #fff;
+	font-weight: bold;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.directory-filters-inputs button.directory-filter-submit:hover {
+	background: #e27640;
+}
+
+.directory-filters-inputs button.directory-filter-submit:disabled {
+	background: #aaa;
+}
+
+.directory-filters-inputs button.directory-filter-reset {
+	background: none;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.directory-filters-inputs button.directory-filter-reset:disabled {
+	text-decoration: none;
+}
+
+.directory-filters-inputs button.directory-filter-reset:hover {
+	color: #f58d58;
+}
+
+.directory-filters-inputs button.directory-filter-reset:disabled:hover {
+	color: inherit;
+}
+
+.directory-filter-type-dropdown {
+	height: 40px;
+}
