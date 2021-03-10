@@ -1,4 +1,4 @@
-name: gh-pages-deploy
+name: gh-pages-deploy2
 
 on: [push]
 
