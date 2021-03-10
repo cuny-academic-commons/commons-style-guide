@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+
+<script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../css/style.css?1615395697809" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1615395697809" media="all" />
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+
+  </head>
+  <body class="directory">
+<div class="padder">
+
+	<div class="directory-title">
+		<h2>Groups Directory</h2>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	
+	<script src="../../js/directory-filters.js"></script>
+	
+	<link rel='stylesheet' id='dashicons-css'  href='https://commons.gc.cuny.edu/wp-includes/css/dashicons.min.css?ver=5.5.3-1.18.6' type='text/css' media='all' />
+	
+	<form class="directory-filter-form" method="get" action="https://commons.gc.cuny.edu/groups/">
+	<div class="filter-container groups-directory-filters">
+		<div class="directory-nav-tabs" role="navigation">
+			<ul>
+				<li class="selected" id="groups-all">
+					<a href="https://commons.gc.cuny.edu/groups/ ">All Groups <span>1,505</span></a>
+				</li>
+		
+				<li class="" id="groups-all">
+					<a href="https://commons.gc.cuny.edu/groups/ ">My Groups <span>123</span></a>
+				</li>
+			</ul>
+		</div><!-- .directory-nav-tabs -->
+		
+	
+		<div class="directory-filters-inputs">
+			<div class="directory-filter directory-filter-type-text">
+				<input class="directory-filter-input" type="text" placeholder="Enter keyword" name="filters[keyword]" id="directory-filter-keyword" value="">
+			</div>
+		
+			<div class="directory-filter directory-filter-type-dropdown">
+				<div class="directory-filter-dropdown" id="directory-filter-campus" role="tablist">
+					<h3 class="directory-filter-dropdown-title">
+						<button class="directory-filter-dropdown-button" id="directory-filter-campus-button" aria-controls="directory-filter-campus-options" aria-expanded="false" role="tab" aria-selected="false" type="button">Campus</button>
+			
+						<div class="directory-filter-options" id="directory-filter-campus-options" aria-labelledby="directory-filter-campus-button" role="tabpanel" aria-hidden="true">
+							<div class="directory-filter-options-close mobile-only">
+								<button aria-label="Close" id="directory-filter-campus-option-close" type="button"><span class="dashicons dashicons-no-alt"></span></button>
+							</div>
+			
+							<div class="directory-filter-options-title mobile-only">Choose Campus</div>
+			
+							<div class="directory-filter-options-scrollable">
+			
+							<ul>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="0" id="directory-filter-campus-option-0"> <label for="directory-filter-campus-option-0">Baruch College</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="1" id="directory-filter-campus-option-1"> <label for="directory-filter-campus-option-1">Borough of Manhattan Community College</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="2" id="directory-filter-campus-option-2"> <label for="directory-filter-campus-option-2">Bronx Community College</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="3" id="directory-filter-campus-option-3"> <label for="directory-filter-campus-option-3">Brooklyn College</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="4" id="directory-filter-campus-option-4"> <label for="directory-filter-campus-option-4">CUNY Central</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="5" id="directory-filter-campus-option-5"> <label for="directory-filter-campus-option-5">CUNY Graduate Center</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="6" id="directory-filter-campus-option-6"> <label for="directory-filter-campus-option-6">CUNY Graduate School of Public Health and Health Policy</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="7" id="directory-filter-campus-option-7"> <label for="directory-filter-campus-option-7">CUNY School of Labor and Urban Studies</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="8" id="directory-filter-campus-option-8"> <label for="directory-filter-campus-option-8">CUNY School of Law</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="9" id="directory-filter-campus-option-9"> <label for="directory-filter-campus-option-9">CUNY School of Medicine</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="10" id="directory-filter-campus-option-10"> <label for="directory-filter-campus-option-10">CUNY School of Professional Studies</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="11" id="directory-filter-campus-option-11"> <label for="directory-filter-campus-option-11">City College of New York</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="12" id="directory-filter-campus-option-12"> <label for="directory-filter-campus-option-12">College of Staten Island</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="13" id="directory-filter-campus-option-13"> <label for="directory-filter-campus-option-13">Craig Newmark Graduate School of Journalism</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="14" id="directory-filter-campus-option-14"> <label for="directory-filter-campus-option-14">Guttman Community College</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="15" id="directory-filter-campus-option-15"> <label for="directory-filter-campus-option-15">Hostos Community College</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="16" id="directory-filter-campus-option-16"> <label for="directory-filter-campus-option-16">Hunter College</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="17" id="directory-filter-campus-option-17"> <label for="directory-filter-campus-option-17">John Jay College of Criminal Justice</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="18" id="directory-filter-campus-option-18"> <label for="directory-filter-campus-option-18">Kingsborough Community College</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="19" id="directory-filter-campus-option-19"> <label for="directory-filter-campus-option-19">LaGuardia Community College</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="20" id="directory-filter-campus-option-20"> <label for="directory-filter-campus-option-20">Lehman College</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="21" id="directory-filter-campus-option-21"> <label for="directory-filter-campus-option-21">Macaulay Honors College</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="22" id="directory-filter-campus-option-22"> <label for="directory-filter-campus-option-22">Medgar Evers College</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="23" id="directory-filter-campus-option-23"> <label for="directory-filter-campus-option-23">New York City College of Technology</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="24" id="directory-filter-campus-option-24"> <label for="directory-filter-campus-option-24">Queens College</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="25" id="directory-filter-campus-option-25"> <label for="directory-filter-campus-option-25">Queensborough Community College</label>
+									</li>
+							</ul>
+						</div>
+					</h3>
+				</div>
+			</div>
+		
+			<div class="directory-filter directory-filter-type-dropdown">
+				<div class="directory-filter-dropdown" id="directory-filter-purpose" role="tablist">
+					<h3 class="directory-filter-dropdown-title">
+						<button class="directory-filter-dropdown-button" id="directory-filter-purpose-button" aria-controls="directory-filter-purpose-options" aria-expanded="false" role="tab" aria-selected="false" type="button">Purpose</button>
+			
+						<div class="directory-filter-options" id="directory-filter-purpose-options" aria-labelledby="directory-filter-purpose-button" role="tabpanel" aria-hidden="true">
+							<div class="directory-filter-options-close mobile-only">
+								<button aria-label="Close" id="directory-filter-campus-option-close" type="button"><span class="dashicons dashicons-no-alt"></span></button>
+							</div>
+			
+							<div class="directory-filter-options-title mobile-only">Choose Purpose</div>
+			
+							<div class="directory-filter-options-scrollable">
+			
+							<ul>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="committee" id="directory-filter-campus-option-committee"> <label for="directory-filter-campus-option-committee">Committee</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="community-of-interest" id="directory-filter-campus-option-community-of-interest"> <label for="directory-filter-campus-option-community-of-interest">Community of Interest</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="conference" id="directory-filter-campus-option-conference"> <label for="directory-filter-campus-option-conference">Conference</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="department-program-center" id="directory-filter-campus-option-department-program-center"> <label for="directory-filter-campus-option-department-program-center">Department/Program/Center</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="other" id="directory-filter-campus-option-other"> <label for="directory-filter-campus-option-other">Other</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="personal" id="directory-filter-campus-option-personal"> <label for="directory-filter-campus-option-personal">Personal</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="portfolio" id="directory-filter-campus-option-portfolio"> <label for="directory-filter-campus-option-portfolio">Portfolio</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="project" id="directory-filter-campus-option-project"> <label for="directory-filter-campus-option-project">Project</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="publication" id="directory-filter-campus-option-publication"> <label for="directory-filter-campus-option-publication">Publication</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="teaching" id="directory-filter-campus-option-teaching"> <label for="directory-filter-campus-option-teaching">Teaching</label>
+									</li>
+									<li>
+										<input class="directory-filter-input" name="filters[campus][]" type="checkbox" value="working-group" id="directory-filter-campus-option-working-group"> <label for="directory-filter-campus-option-working-group">Working Group</label>
+									</li>
+							</ul>
+						</div>
+					</h3>
+				</div>
+			</div>
+		
+			<div class="directory-filter-actions">
+				<button class="directory-filter-submit" type="submit" disabled="disabled">Filter</button>
+				<button class="directory-filter-reset" type="button" disabled="disabled">Reset</button>
+			</div>
+		</div>
+	</div>
+	</form>
+
+
+<div id="groups-dir-list" class="groups dir-list dir-list-boxed">
+
+
+
+
+<div class="groups-pagination pagination pagination-boxed">
+<div class="pag-count">
+	<div class="directory-pagination-message">Viewing 1 - 20 of 1,501 groups</div>
+</div>
+
+<div class="directory-order-by-container">
+	<ul>
+
+		<li class="last">
+
+			<label for="groups-order-by">Order By:</label>
+			<select id="groups-order-by" name="order-by" class="directory-order-by-std">
+				<option value="active" selected="selected">Last Active</option>
+				<option value="popular">Most Members</option>
+				<option value="newest">Newly Created</option>
+				<option value="alphabetical">Alphabetical</option>
+
+
+			</select>
+		</li>
+	</ul>
+</div>
+</div>
+
+
+<ul id="groups-list" class="item-list" role="main">
+
+
+		<li class="odd private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="//www.gravatar.com/avatar/c9e4576b40c65ba34fdbb8cf7846b24a?s=50&amp;r=g&amp;d=retro" data-src="//www.gravatar.com/avatar/c9e4576b40c65ba34fdbb8cf7846b24a?s=50&amp;r=g&amp;d=retro" class="avatar group-2287-avatar avatar-50 photo" width="50" height="50" alt="Group logo of Constructing History Spring 2021">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/constructing-history-spring-2021/">Constructing History Spring 2021</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>14 minutes ago</span></span>
+
+			<div class="item-description"><p>The course group for ASCP 82000/MALS 70200.</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 11 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="even public group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/files/group-avatars/1514/5e40bcd5b9683-bpthumb.png" data-src="https://commons.gc.cuny.edu/files/group-avatars/1514/5e40bcd5b9683-bpthumb.png" class="avatar group-1514-avatar avatar-50 photo" width="50" height="50" alt="Group logo of DARC (Digital Archive Research Collective)">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/darc-digital-archive-research-collective/">DARC (Digital Archive Research Collective)</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>30 minutes ago</span></span>
+
+			<div class="item-description"><p>The Digital Archive Research Collective is a platform that aims to address the needs of students, faculty, and communities working on archival research at The Graduate Center. While our primary goal is to assist […]</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Public Group / 84 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="odd private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="//www.gravatar.com/avatar/8cff7d6dce526e67be9d50b9741e4d65?s=50&amp;r=g&amp;d=retro" data-src="//www.gravatar.com/avatar/8cff7d6dce526e67be9d50b9741e4d65?s=50&amp;r=g&amp;d=retro" class="avatar group-2257-avatar avatar-50 photo" width="50" height="50" alt="Group logo of English 201-29, Spring 2021">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/english-201-29-spring-2021/">English 201-29, Spring 2021</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>an hour ago</span></span>
+
+			<div class="item-description"><p>This is the Course Group for ENG 201 with Olivia Wood, Spring 2021</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 20 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="even private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/files/group-avatars/1746/5dfc1218a3b4f-bpthumb.jpg" data-src="https://commons.gc.cuny.edu/files/group-avatars/1746/5dfc1218a3b4f-bpthumb.jpg" class="avatar group-1746-avatar avatar-50 photo" width="50" height="50" alt="Group logo of M.A. Program in Biography and Memoir">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/m-a-program-in-biography-and-memoir/">M.A. Program in Biography and Memoir</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>an hour ago</span></span>
+
+			<div class="item-description"><p>A group and site for the CUNY GC M.A. Program in Biography and Memoir community. Check out upcoming events at our site – <a href="http://cuny.is/mabam" rel="nofollow">http://cuny.is/mabam</a> !</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 34 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="odd private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="https://commons.gc.cuny.edu/files/group-avatars/2290/601199bc11e98-bpthumb.png" class="avatar group-2290-avatar avatar-50 photo" width="50" height="50" alt="Group logo of EAS 413/A1300">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/eas-413-a1300/">EAS 413/A1300</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>an hour ago</span></span>
+
+			<div class="item-description"><p>Spring 2021 EAS 413/A1300 Environmental Geochemistry</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 22 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="even private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="https://commons.gc.cuny.edu/files/group-avatars/2312/6014bd2ebd2d4-bpthumb.jpg" class="avatar group-2312-avatar avatar-50 photo" width="50" height="50" alt="Group logo of Theatre History 1 (Spring 2021, CCNY)">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/theatre-history-1-spring-2021-ccny/">Theatre History 1 (Spring 2021, CCNY)</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>an hour ago</span></span>
+
+			<div class="item-description"><p>THTR 21100 | Section M (Class Number: 31116)</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 4 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="odd private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="https://commons.gc.cuny.edu/files/group-avatars/1404/5af9bb0645564-bpthumb.png" class="avatar group-1404-avatar avatar-50 photo" width="50" height="50" alt="Group logo of MA in Digital Humanities, CUNY Graduate Center">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/ma-in-digital-humanities-cuny-graduate-center/">MA in Digital Humanities, CUNY Graduate Center</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>an hour ago</span></span>
+
+			<div class="item-description"><p>A private group for students and staff of the MA Program in Digital Humanities at The Graduate Center — <a href="http://www.gc.cuny.edu/dh" rel="nofollow">http://www.gc.cuny.edu/dh</a></p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 80 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="even private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="https://commons.gc.cuny.edu/files/group-avatars/1473/5b60724956250-bpthumb.png" class="avatar group-1473-avatar avatar-50 photo" width="50" height="50" alt="Group logo of MS Program in Data Analysis and Visualization">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/ms-program-in-data-analysis-and-visualization/">MS Program in Data Analysis and Visualization</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>an hour ago</span></span>
+
+			<div class="item-description"><p>A private group for students and staff of the MS Program in Data Analysis and Visualization at The Graduate Center — <a href="http://www.gc.cuny.edu/datavis" rel="nofollow">http://www.gc.cuny.edu/datavis</a></p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 72 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="odd private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="//www.gravatar.com/avatar/f0f03d388c5c770c2ec7196463184595?s=50&amp;r=g&amp;d=retro" class="avatar group-2260-avatar avatar-50 photo" width="50" height="50" alt="Group logo of Spring 2021 Muslims, Tolerance and Religious Pluralism">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/spring-2021-muslims-tolerance-and-religious-pluralism/">Spring 2021 Muslims, Tolerance and Religious Pluralism</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>2 hours ago</span></span>
+
+			<div class="item-description"><p>Group for course — restricted to participants in the course</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 9 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="even private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="//www.gravatar.com/avatar/2f28c8bef8dc3fe19b8b8b5a83eb7d60?s=50&amp;r=g&amp;d=retro" class="avatar group-2278-avatar avatar-50 photo" width="50" height="50" alt="Group logo of ITP Core Two Spring 2021">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/itp-core-two-spring-2021/">ITP Core Two Spring 2021</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>2 hours ago</span></span>
+
+			<div class="item-description"><p>Group for ITP Core 2, Spring 2021</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 20 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="odd private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="https://commons.gc.cuny.edu/files/group-avatars/648/b908e4e7ca11dca634c10d2af308de57-bpthumb.jpg" class="avatar group-648-avatar avatar-50 photo" width="50" height="50" alt="Group logo of PhD Program in History">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/history-program/">PhD Program in History</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>3 hours ago</span></span>
+
+			<div class="item-description"><p>For History students, faculty,and alumni.</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 113 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="even private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="//www.gravatar.com/avatar/c94e125f94247ac6d672288b79c271cf?s=50&amp;r=g&amp;d=retro" class="avatar group-2353-avatar avatar-50 photo" width="50" height="50" alt="Group logo of Advanced Research and Writing Seminar Spring 2021">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/advanced-research-and-writing-seminar-spring-2021/">Advanced Research and Writing Seminar Spring 2021</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>3 hours ago</span></span>
+
+			<div class="item-description"><p>This course focuses on supporting advanced doctoral students who are doing research, analysis and writing as part of their second exam, thesis proposal or dissertation work. With instructor guidance, students will […]</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 13 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="odd private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="//www.gravatar.com/avatar/d254213a5a5ae93fcbb20c3ad11889b9?s=50&amp;r=g&amp;d=retro" class="avatar group-2245-avatar avatar-50 photo" width="50" height="50" alt="Group logo of FIQWS SC1 Composition">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/fiqws-sc1-composition/">FIQWS SC1 Composition</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>8 hours ago</span></span>
+
+			<div class="item-description"><p>Group for FIQWS Energy composition section.</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 26 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="even private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="https://commons.gc.cuny.edu/files/group-avatars/2313/60158aaf95778-bpthumb.jpg" class="avatar group-2313-avatar avatar-50 photo" width="50" height="50" alt="Group logo of Dr. Aptekar’s URB 610 Spring 2021">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/dr-aptekars-urb-610-spring-2021/">Dr. Aptekar’s URB 610 Spring 2021</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>15 hours ago</span></span>
+
+			<div class="item-description"><p>Throughout the semester, you will be asked to respond to a discussion prompt. Click on FORUM on the left to find them. After the initial post, you will also be asked to return to the forum to comment on your […]</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 17 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="odd private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="https://commons.gc.cuny.edu/files/group-avatars/2285/601076aed239d-bpthumb.png" class="avatar group-2285-avatar avatar-50 photo" width="50" height="50" alt="Group logo of PSY 352: History and Systems of Psychology">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/psy-352-history-and-systems-of-psychology/">PSY 352: History and Systems of Psychology</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>15 hours ago</span></span>
+
+			<div class="item-description"><p>Historical development of contemporary psychology including a critical survey of its chief contemporary systems: structuralism, functionalism, psychoanalysis, behaviorism, Gestalt psychology, and others. […]</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 39 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="even private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="https://commons.gc.cuny.edu/files/group-avatars/2373/602b1f8ba1143-bpthumb.jpg" class="avatar group-2373-avatar avatar-50 photo" width="50" height="50" alt="Group logo of Mapping Cemeteries">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/mapping-cemeteries/">Mapping Cemeteries</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>15 hours ago</span></span>
+
+			<div class="item-description"><p>As part of DHUM 70002 Digital Humanities: Methods and Practices (Spring 2021, professor J. Bret Maney), we are creating a proof of concept mapping project that aims to visualize and understand cemeteries in the […]</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 6 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="odd private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="https://commons.gc.cuny.edu/files/group-avatars/2251/6018344891283-bpthumb.jpg" class="avatar group-2251-avatar avatar-50 photo" width="50" height="50" alt="Group logo of Digital Memories">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/digital-memories/">Digital Memories</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>16 hours ago</span></span>
+
+			<div class="item-description"><p>This group is connected to the Spring 21 Digital Memories class (DHUM- 78000-1).</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 17 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="even public group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="https://commons.gc.cuny.edu/files/group-avatars/2199/5f860f234a01d-bpthumb.jpg" class="avatar group-2199-avatar avatar-50 photo" width="50" height="50" alt="Group logo of Transformative Learning in the Humanities">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/transformative-learning-in-the-humanities/">Transformative Learning in the Humanities</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>17 hours ago</span></span>
+
+			<div class="item-description"><p>Transformative Learning in the Humanities is a three-year initiative supported by the Andrew W. Mellon Foundation. The grant supports public talks, symposia, and workshops as well as a series of intensive […]</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Public Group / 93 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="odd private group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="//www.gravatar.com/avatar/0a7031c6b0f10ab1a2685a01ee296a4c?s=50&amp;r=g&amp;d=retro" class="avatar group-2326-avatar avatar-50 photo" width="50" height="50" alt="Group logo of Historical Thinking Seminar">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/historical-thinking-seminar/">Historical Thinking Seminar</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>18 hours ago</span></span>
+
+			<div class="item-description"><p>A Spring 2021 seminar for Urban Ed and other social science doctoral students interested in incorporating historical thinking and analysis into their doctoral research work.</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Private Group / 9 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+		<li class="even public group-has-avatar item">
+	<div class="item-avatar" aria-hidden="true">
+		<img loading="lazy" src="https://commons.gc.cuny.edu/wp-content/plugins/bp-lazyload-avatars/bg.gif" data-src="https://commons.gc.cuny.edu/files/group-avatars/2316/6016ddd59dc4a-bpthumb.jpg" class="avatar group-2316-avatar avatar-50 photo" width="50" height="50" alt="Group logo of LTS 360/ART 350 Special Topics: Interdisciplinary Design Course: Immigration Design">			</div>
+
+	<div class="item-details">
+		<div class="item-title">
+			<a href="https://commons.gc.cuny.edu/groups/lts-360-art-350-special-topics-interdisciplinary-design-course-immigration-design/">LTS 360/ART 350 Special Topics: Interdisciplinary Design Course: Immigration Design</a>
+		</div>
+
+		<div>
+			<span class="activity">active <span>19 hours ago</span></span>
+
+			<div class="item-description"><p>This course seeks to bring design thinking to bear on the question of migration in the Western hemisphere. Students will be asked to think outside the existing and unimaginative frames of migration policy and […]</p>
+</div>
+		</div>
+	</div>
+
+	<div class="item-actions">
+
+		<div class="item-actions-buttons">
+							</div>
+
+		<div class="meta">
+
+			Public Group / 12 members
+		</div>
+
+	</div>
+
+			</li>
+
+
+
+</ul>
+
+
+<div id="pag-bottom" class="pagination">
+
+<div class="pag-count" id="group-dir-count-bottom">
+
+	Viewing 1 - 20 of 1,501 groups
+</div>
+
+<div class="pagination-links" id="group-dir-pag-bottom">
+
+	<span aria-current="page" class="page-numbers current">1</span>
+<a class="page-numbers" href="?grpage=2&amp;num=20">2</a>
+<span class="page-numbers dots">…</span>
+<a class="page-numbers" href="?grpage=76&amp;num=20">76</a>
+<a class="next page-numbers" href="?grpage=2&amp;num=20">→</a>
+</div>
+
+</div>
+
+
+
+</div><!-- #groups-dir-list -->
+
+
+<input type="hidden" id="_wpnonce-groups-filter" name="_wpnonce-groups-filter" value="60df1a4037"><input type="hidden" name="_wp_http_referer" value="/groups/">
+
+
+</div><!-- .padder -->
+
+<!--DO NOT REMOVE-->
+<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-directory-title","lineagePath":"../../patterns/organisms-directory-directory-title/organisms-directory-directory-title.rendered.html"},{"lineagePattern":"organisms-directory-filters","lineagePath":"../../patterns/organisms-directory-directory-filters/organisms-directory-directory-filters.rendered.html"}],"lineage":[{"lineagePattern":"organisms-directory-title","lineagePath":"../../patterns/organisms-directory-directory-title/organisms-directory-directory-title.rendered.html"},{"lineagePattern":"organisms-directory-filters","lineagePath":"../../patterns/organisms-directory-directory-filters/organisms-directory-directory-filters.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"pages","patternSubgroup":""},"patternExtension":"hbs","patternName":"Directory","patternPartial":"pages-directory","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-directory-title","lineagePath":"../../patterns/organisms-directory-directory-title/organisms-directory-directory-title.rendered.html"},{"lineagePattern":"organisms-directory-filters","lineagePath":"../../patterns/organisms-directory-directory-filters/organisms-directory-directory-filters.rendered.html"}],"lineage":[{"lineagePattern":"organisms-directory-title","lineagePath":"../../patterns/organisms-directory-directory-title/organisms-directory-directory-title.rendered.html"},{"lineagePattern":"organisms-directory-filters","lineagePath":"../../patterns/organisms-directory-directory-filters/organisms-directory-directory-filters.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"pages","patternSubgroup":""},"patternExtension":"hbs","patternName":"Directory","patternPartial":"pages-directory","patternState":"","patternEngineName":"handlebars","extraOutput":{}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1615395697809">
+  (function() {
+    if (self != top) {
+      var cb = '1615395697809';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1615395697809" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+</body>
+</html>
