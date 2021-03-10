@@ -84,6 +84,10 @@
 	padding-bottom: 25px;
 }
 
+.mobile-only {
+	display: none;
+}
+
 /*------------------------------------*\
     #SPACING
 \*------------------------------------*/
@@ -347,7 +351,7 @@ input,
 select,
 textarea {
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 12px;
   margin: 0;
 }
 
@@ -909,6 +913,64 @@ tr {
 \*------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */
+
+.directory-nav-tabs {
+	flex-basis: 300px;
+}
+
+.directory-nav-tabs ul li {
+	float: left;
+	margin: 5px 0 0 5px;
+}
+
+.directory-nav-tabs ul li a {
+	border-radius: 3px;
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+.directory-nav-tabs ul li.selected a {
+	background-color: #fff;
+	color: #555;
+	font-weight: bold;
+}
+
+.directory-nav-tabs ul li a span {
+    background: #1c576c;
+	border-radius: 2px;
+	color: #fff;
+	display: inline;
+	font-size: 90%;
+	margin-left: 2px;
+	padding: 1px 6px;
+}
+
+.directory-nav-tabs ul li a:hover span {
+    background-color: #999;
+}
+
+.directory-nav-tabs ul li.selected a span {
+    background: #555;
+}
+
+.directory-order-by-container {
+	float: right;
+}
+
+.filter-container {
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	margin-top: 17px;
+	padding: 10px 21px;
+	display: flex;
+	flex-direction: row;
+}
+
+.filter-container > div {
+	flex-shrink: 0;
+}
 .directory-filters-inputs {
 	display: flex;
 	flex-grow: 1;
@@ -1080,4 +1142,99 @@ tr {
 
 .directory-filter-type-dropdown {
 	height: 40px;
+}
+
+@media screen and (max-width:650px) {
+	.filter-container {
+		display: block;
+		padding: 10px;
+	}
+
+	.directory-nav-tabs {
+		margin-bottom: 18px;
+		overflow: hidden;
+	}
+
+	.directory-filters-inputs {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.courses-directory-filters .directory-filter,
+	.courses-directory-filters .directory-filter-actions,
+	.directory-filter,
+	.directory-filter-actions {
+		margin-bottom: 10px;
+	}
+
+	.directory-filter-actions,
+	.directory-filter-type-text {
+		flex-basis: 100%;
+	}
+
+	.directory-filter-type-text input {
+		width: 95%;
+	}
+
+	.directory-filters-inputs button.directory-filter-dropdown-button {
+		height: 40px;
+		line-height: 40px;
+		padding-left: 20px;
+		padding-right: 34px;
+	}
+
+	.directory-filters-inputs button.directory-filter-submit {
+		height: 40px;
+		line-height: 40px;
+		margin-right: 20px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.directory-order-by {
+		text-align: left;
+	}
+
+	body.has-open-filter-dropdown .directory-filter-overlay {
+		background: #fff;
+		height: 100%;
+		opacity: .7;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 475;
+	}
+
+	body.has-open-filter-dropdown .directory-filter-options {
+		left: 0;
+		height: calc(100% - 29px - 80px);
+		position: fixed;
+		left: 25px;
+		width: calc(100% - 50px);
+		z-index: 500;
+	}
+
+	.directory-filter-options-close {
+		font-size: 18px;
+		padding: 0;
+		position: absolute;
+		right: 0;
+		top: 19px;
+	}
+
+	.directory-filter-options-close button {
+		background: 0;
+		border: 0;
+		color: #666;
+	}
+
+	.directory-filter-options-title {
+		border-bottom: 1px solid #eaeaea;
+		color: #f58d58;
+		font-weight: normal;
+		font-size: 16px;
+		margin: 19px 19px 0;
+		padding-bottom: 12px;
+	}
 }
