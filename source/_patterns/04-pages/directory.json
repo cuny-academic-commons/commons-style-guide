@@ -1,1 +1,32 @@
-{}
+{
+	"bodyClass": "directory",
+	"directoryType": "groups",
+	"directoryTypeSingular": "group",
+	"dirItems": [
+		{
+			"activeSince": "14 minutes ago",
+			"avatarClass": "avatar group-2287-avatar avatar-50 photo",
+			"avatarUrl": "//www.gravatar.com/avatar/c9e4576b40c65ba34fdbb8cf7846b24a?s=50&amp;r=g&amp;d=retro",
+			"itemDescription": "In amet et perspiciatis. Quos voluptatem sit facilis dolor nam officiis accusantium. Molestiae minima provident et. Dolor officiis voluptatem hic ex quia eos",
+			"itemName": "Sample Group 1",
+			"itemUrl": "https://example.com/groups/sample-group-1"
+		},
+		{
+			"activeSince": "14 minutes ago",
+			"avatarClass": "avatar group-2287-avatar avatar-50 photo",
+			"avatarUrl": "//www.gravatar.com/avatar/c9e4576b40c65ba34fdbb8cf7846b24a?s=50&amp;r=g&amp;d=retro",
+			"itemDescription": "In amet et perspiciatis. Quos voluptatem sit facilis dolor nam officiis accusantium. Molestiae minima provident et. Dolor officiis voluptatem hic ex quia eos",
+			"itemName": "Sample Group 2",
+			"itemUrl": "https://example.com/groups/sample-group-1"
+		},
+		{
+			"activeSince": "14 minutes ago",
+			"avatarClass": "avatar group-2287-avatar avatar-50 photo",
+			"avatarUrl": "//www.gravatar.com/avatar/c9e4576b40c65ba34fdbb8cf7846b24a?s=50&amp;r=g&amp;d=retro",
+			"itemDescription": "In amet et perspiciatis. Quos voluptatem sit facilis dolor nam officiis accusantium. Molestiae minima provident et. Dolor officiis voluptatem hic ex quia eos",
+			"itemName": "Sample Group 3",
+			"itemUrl": "https://example.com/groups/sample-group-1"
+		}
+	],
+	"paginationText": "Viewing 1 - 20 of 1,501 groups"
+}
