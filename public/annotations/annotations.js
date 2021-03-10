@@ -1,1 +1,0 @@
-var comments = { "comments" : [{"title":"Campus filter dropdown","comment":"<p>Populate the options using <code>cac_get_cuny_campuses()</code>.</p>\n"}]};
