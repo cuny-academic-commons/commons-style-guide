@@ -338,9 +338,6 @@ legend {
  * Label base styles
  */
 label {
-  display: block;
-  padding-bottom: 0.25rem;
-  color: #131313;
 }
 
 /**
@@ -411,19 +408,11 @@ input[type=search] {
 
 /**
  * Select
- * 1) Remove default styling
  */
 select {
-  display: block;
-  font-size: 1rem;
-  width: 100%;
-  border: 1px solid #444;
-  padding: 0.5rem;
-  background: #fff;
-  color: #131313;
+	font-size: 100%;
 }
 select:focus {
-  border-color: #131313;
 }
 
 /*------------------------------------*\
@@ -445,7 +434,6 @@ button {
  */
 [role=main] {
   display: block;
-  padding: 1rem;
 }
 
 /*------------------------------------*\
@@ -921,6 +909,10 @@ div.pagination {
 	border-bottom: 1px solid #EAEAEA;
 }
 
+div.pagination .pag-count {
+    float: left;
+}
+
 .directory-order-by-container {
 	float: right;
 }
@@ -995,7 +987,6 @@ div.pagination.pagination-boxed,
 .dir-list-boxed ul.item-list li .item-actions .meta {
 	color: #000008;
 	margin-top: 0;
-
 }
 
 #courses-dir-list .item-list {
@@ -1091,6 +1082,10 @@ div.pagination.pagination-boxed,
 		position: relative;
 		width: 100%;
 	}
+}
+
+.item-list {
+	clear: both;
 }
 
 .directory .dir-list {
